@@ -1,0 +1,8 @@
+{
+  "id": "sunday-worship",
+  "name": "Sunday Worship Experience",
+  "image": "/static/images/sunday-worship.jpg",
+  "speakers": 3,
+  "tags": ["Multi-speaker", "Gradient", "Colorful"],
+  "prompt_template": "Design a vibrant church event flyer with a smooth gradient blending soft pink on the left and light blue on the right. Church name: \"{church_name}\" at top left. Main title: Bold \"{event_title}\" in dark purple / orange-yellow gradient. Speakers: {speakers_section}. Host: {host}. Theme: {theme}. Date: {date} in maroon box. Time: {time}. Venue: {venue}. Social: {social}."
+}
