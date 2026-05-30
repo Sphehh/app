@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlyerCraft</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="/"><div class="logo-mark">✦</div> FlyerCraft</a>
+    <div class="nav-right"></div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-tag">✦ AI-Powered Church Flyers</div>
+    <h1>Beautiful flyers, <em>generated</em><br>in seconds.</h1>
+    <p>Pick a template, enter your church details, upload speakers’ photos, remove backgrounds — and let AI craft a stunning flyer.</p>
+  </section>
+
+  <div class="templates">
+    {% for prompt in prompts %}
+    <div class="template-card" onclick="location.href='/editor/{{ prompt.id }}'">
+      <div class="template-thumb">
+        <img src="{{ prompt.image }}" alt="{{ prompt.name }}"/>
+      </div>
+      <div class="template-info">
+        <h3>{{ prompt.name }}</h3>
+        <div class="template-tags">
+          {% for tag in prompt.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <footer>
+    Built with FlyerCraft · Powered by <a href="https://piapi.ai" target="_blank">PiAPI</a>
+  </footer>
+</body>
+</html>
