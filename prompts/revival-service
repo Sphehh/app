@@ -1,0 +1,8 @@
+{
+  "id": "revival-service",
+  "name": "Revival Worship Service",
+  "image": "/static/images/revival.jpg",
+  "speakers": 1,
+  "tags": ["Single speaker", "Deep blue", "Bold"],
+  "prompt_template": "Create a professional church event flyer with a deep blue background. Church name: \"{church_name}\" in white. Main title: \"{event_title}\" in bright yellow. Subtitle: \"Worship Service\" in white cursive. Program theme box: \"{theme}\" in red. Speaker: {speakers_section}. Date: {date}. Time: {time}. Venue: {venue}."
+}
